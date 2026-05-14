@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from "react";
-import SplashScreen from "./components/SplashScreen";
-import Onboarding from "./components/Onboarding";
+import { Routes, Route } from "react-router-dom";
 
-const App = () => {
-  const [showSplash, setShowSplash] = useState(true);
+import SplashScreen from "../pages/SplashScreen";
+import OnboardingScreen from "../pages/OnboardingScreen";
+import SignUpScreen from "../pages/SignUpScreen";
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowSplash(false);
-    }, 3000); // 3 seconds
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<SplashScreen />} />
 
-    return () => clearTimeout(timer);
-  }, []);
+      <Route path="/onboarding" element={<OnboardingScreen />} />
 
-  return <div>{showSplash ? <SplashScreen /> : <Onboarding />}</div>;
-};
+      <Route path="/signup" element={<SignUpScreen />} />
+    </Routes>
+  );
+}
 
 export default App;

@@ -1,0 +1,108 @@
+.splash-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #800020;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.splash-layout {
+  max-width: 100%;
+}
+
+.splash-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.splash-logo-box {
+  width: clamp(80px, 20vw, 110px);
+  height: clamp(80px, 20vw, 110px);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.anim-pulse {
+  animation: pulse 1.6s ease-in-out infinite;
+}
+
+.splash-logo-svg {
+  width: 60%;
+  height: auto;
+  display: block;
+}
+
+.splash-title {
+  font-size: clamp(36px, 10vw, 64px);
+  font-weight: 800;
+  letter-spacing: 0.20em;
+  margin: 0;
+}
+
+.splash-subtitle {
+  font-size: clamp(13px, 3vw, 16px);
+  color: rgba(255, 255, 255, 0.9);
+  margin: 14px 0 0;
+}
+
+.splash-spinner {
+  width: clamp(24px, 6vw, 32px);
+  height: clamp(24px, 6vw, 32px);
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.22);
+  border-top-color: #fff;
+  margin-top: 40px;
+}
+
+.anim-logo {
+  animation: fadeUp 0.6s ease both;
+}
+
+.anim-title {
+  animation: fadeUp 0.6s ease 0.2s both;
+}
+
+.anim-sub {
+  animation: fadeUp 0.6s ease 0.4s both;
+}
+
+.anim-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

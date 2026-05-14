@@ -1,0 +1,52 @@
+.field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  border: 1.5px solid #e8e8e8;
+  border-radius: 14px;
+
+  padding: 14px 16px;
+
+  margin-bottom: 14px;
+
+  transition: border-color 0.2s;
+}
+
+.field:focus-within {
+  border-color: #800020;
+}
+
+.field-icon {
+  font-size: 18px;
+  color: #ccc;
+
+  flex-shrink: 0;
+}
+
+.field-input {
+  flex: 1;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+
+  color: #111;
+}
+
+.field-input::placeholder {
+  color: #c0c0c0;
+}
+
+.field-eye {
+  font-size: 18px;
+  cursor: pointer;
+
+  color: #ccc;
+
+  flex-shrink: 0;
+}

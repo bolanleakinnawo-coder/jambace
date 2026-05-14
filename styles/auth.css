@@ -1,0 +1,165 @@
+.signup-page {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  background: #fff;
+}
+
+.signup-back {
+  align-self: flex-start;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.signup-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.signup-subtitle {
+  font-size: 15px;
+  color: #666;
+  margin: 0 0 22px;
+  line-height: 1.6;
+}
+
+.terms-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.terms-text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.7;
+}
+
+.primary-text {
+  color: var(--primary);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.signup-btn {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+}
+
+.divider-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.divider-text {
+  font-size: 13px;
+  color: #999;
+  white-space: nowrap;
+}
+
+.social-row {
+  display: flex;
+  gap: 12px;
+}
+
+.social-btn {
+  flex: 1;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 14px;
+  padding: 14px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #444;
+  background: #fff;
+  cursor: pointer;
+}
+
+.google-icon {
+  color: #4285f4;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.facebook-icon {
+  color: #1877f2;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.bottom-text {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+  margin-top: 14px;
+}
+
+@media (max-width: 520px) {
+  .signup-page {
+    padding: 24px 18px;
+  }
+
+  .signup-title {
+    font-size: 28px;
+  }
+
+  .signup-subtitle {
+    font-size: 14px;
+  }
+
+  .terms-row {
+    gap: 8px;
+  }
+
+  .divider-row {
+    gap: 8px;
+  }
+
+  .social-row {
+    flex-direction: column;
+  }
+
+  .social-btn {
+    width: 100%;
+  }
+}
